@@ -31,9 +31,9 @@ export class WeatherComponent implements OnInit {
     this.weatherService.getweather(_city,this.units).subscribe({
 
       next: (res) => {
-        console.log(res);
+        //console.log(res);
         this.myweather = res;
-        console.log(this.myweather);
+   //     console.log(this.myweather);
         this.iconUrl = 'https://openweathermap.org/img/wn/' + this.myweather.weather[0].icon +'@2x.png';
       },
 
